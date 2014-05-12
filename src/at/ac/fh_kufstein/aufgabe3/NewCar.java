@@ -1,7 +1,9 @@
+package at.ac.fh_kufstein.aufgabe3;
 
-package at.ac.fh_kufstein.uebung_03.Classes;
 
-public class Car extends Vehicle {
+import at.ac.fh_kufstein.uebung_03.Classes.Vehicle;
+
+public class NewCar extends Vehicle {
     
     private boolean aircondition;
     private short airbag;
@@ -31,15 +33,14 @@ public class Car extends Vehicle {
         return "Mein Auto hat " + getPs() + " PS und fährt mit " + getSpeed() + " km/h";
     }
 
-    public Car(short airbag, short wheels, short ps, short doors, short speed, color c) {
+    public NewCar(short airbag, short wheels, short ps, short doors, short speed, Vehicle.color c) {
         super(wheels, ps, doors, speed, c);
         this.aircondition = false;
         this.airbag = airbag;
     }
     
-    public Car()
-    {
-      super();  
+    public NewCar() {
+        
     }
     
     public boolean isAircondition() {
@@ -60,3 +61,4 @@ public class Car extends Vehicle {
     
     
 }
+

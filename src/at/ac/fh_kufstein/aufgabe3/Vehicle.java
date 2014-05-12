@@ -1,22 +1,12 @@
 
-package at.ac.fh_kufstein.uebung_03.Classes;
+package at.ac.fh_kufstein.aufgabe3;
 
-public class Vehicle implements Benennbar {
+public class Vehicle extends Benennbar03 {
     
-    private short wheels, ps, doors, speed;
+private short wheels, ps, doors, speed;
     private boolean started;
     private color c;
     protected String name;
-
-    @Override
-    public String getName() {
-       return name;
-    }
-
-    @Override
-    public void setName(String n) {
-       name = n;
-    }
     
     public enum color {
         BLACK, SILVER, RED, GREY, YELLOW, BLUE;
